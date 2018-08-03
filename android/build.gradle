@@ -35,5 +35,5 @@ android {
 
 dependencies {
     //noinspection GradleDynamicVersion
-    compileOnly "com.facebook.react:react-native:${_reactNativeVersion}"
+    compileOnly "com.facebook.react:react-native:0.44.3"
 }
