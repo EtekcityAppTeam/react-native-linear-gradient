@@ -63,6 +63,10 @@ export default class LinearGradient extends Component {
     this.gradientRef.setNativeProps(props);
   }
 
+  setLinearGradientProps(props: PropsType){
+    this.linearGradient.setNativeProps(props);
+  }
+
   render() {
     const {
       children,
@@ -99,6 +103,7 @@ export default class LinearGradient extends Component {
     return (
       <View ref={(component) => { this.gradientRef = component; }} {...otherProps} style={style}>
         <NativeLinearGradient
+          ref={(component)=>{ this.linearGradient = component;}}
           style={{position: 'absolute', top: 0, left: 0, bottom: 0, right: 0}}
           colors={colors.map(processColor)}
           startPoint={convertPoint('start', start)}
