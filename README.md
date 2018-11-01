@@ -13,7 +13,7 @@ Version 2.0 supports react-native >= 0.40.0
 
 You can try linking the project automatically:
 
-`$ react-native link`
+`$ react-native link react-native-linear-gradient`
 
 or do it manually as described below:
 
@@ -82,8 +82,8 @@ dependencies {
 }
 ```
 
-3. and finally, in `android/src/main/java/com/{YOUR_APP_NAME}/MainActivity.java` for react-native < 0.29,
-   or `android/src/main/java/com/{YOUR_APP_NAME}/MainApplication.java` for react-native >= 0.29 add:
+3. and finally, in `android/app/src/main/java/com/{YOUR_APP_NAME}/MainActivity.java` for react-native < 0.29,
+   or `android/app/src/main/java/com/{YOUR_APP_NAME}/MainApplication.java` for react-native >= 0.29 add:
 ```java
 //...
 import com.BV.LinearGradient.LinearGradientPackage; // <--- This!
