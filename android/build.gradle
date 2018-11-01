@@ -16,6 +16,14 @@ android {
         versionName "1.0"
     }
 }
+ buildTypes {
+        release {
+        }
+        debug {
+        }
+        releaseStaging {
+        }
+    }
 
 dependencies {
     compileOnly "com.facebook.react:react-native:+"
